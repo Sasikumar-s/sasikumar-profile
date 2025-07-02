@@ -85,6 +85,7 @@ export default function Sidebar({ onSelect }: SidebarProps) {
       {/* Desktop Sidebar */}
       <aside className="hidden md:flex w-60 h-screen border-r bg-muted p-4">
         <nav className="flex flex-col gap-1 w-full">
+          <AvatorBio />
           {navItems.map((item) => (
             <Button
               key={item.id}

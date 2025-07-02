@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import Sidebar from "../sidebar";
 import AboutMe from "../about-me";
+import TechnicalSkills from "../tech-skills";
 
 export default function ProfileHome() {
   const refs = {
@@ -30,7 +31,9 @@ export default function ProfileHome() {
         <section ref={refs.aboutMe}>
           <AboutMe />
         </section>
-        <section ref={refs.techSkill}>TechSkill </section>
+        <section ref={refs.techSkill}>
+          <TechnicalSkills />{" "}
+        </section>
         <section ref={refs.experience}>Experience</section>
         <section ref={refs.achievements}>Achievements</section>
         <section ref={refs.certification}>Certification</section>
