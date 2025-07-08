@@ -1,8 +1,17 @@
 // components/sidebar.tsx
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ScrollText, Code2, Users, Award, Briefcase, Menu } from "lucide-react";
+import {
+  ScrollText,
+  Code2,
+  Users,
+  Award,
+  Briefcase,
+  Menu,
+  DownloadIcon,
+} from "lucide-react";
 import AvatorBio from "../avator-bio";
+import Link from "next/link";
 
 type SelectionKey =
   | "aboutMe"
@@ -77,6 +86,16 @@ export default function Sidebar({ onSelect }: SidebarProps) {
                   {item.label}
                 </Button>
               ))}
+              <Link
+                className="justify-start pl-3 pr-3 pt-2 pb-2"
+                href={"/Sasikumar_Semalaiyapan_Profile.pdf"}
+                download={true}
+              >
+                <span className="flex items-center">
+                  <DownloadIcon className="mr-2 h-4 w-4" />
+                  <span className="ml-2 font-medium">Resume</span>
+                </span>
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>
@@ -97,6 +116,16 @@ export default function Sidebar({ onSelect }: SidebarProps) {
               {item.label}
             </Button>
           ))}
+          <Link
+            className="justify-start pl-3 pr-3 pt-2 pb-2"
+            href={"/Sasikumar_Semalaiyapan_Profile.pdf"}
+            download={true}
+          >
+            <span className="flex items-center">
+              <DownloadIcon className="mr-2 h-4 w-4" />
+              <span className="ml-2 font-medium">Resume</span>
+            </span>
+          </Link>
         </nav>
       </aside>
     </>
