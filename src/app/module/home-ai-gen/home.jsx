@@ -611,7 +611,7 @@ function Hero() {
             Get In Touch
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Sasikumar-s"
             target="_blank"
             rel="noreferrer"
             style={{
