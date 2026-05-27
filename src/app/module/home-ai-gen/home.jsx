@@ -553,7 +553,7 @@ function Hero() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            {isMobile ? "SEMALAI-\nYAPAN" : "SEMALAIYAPAN"}
+            {isMobile ? "SEMALAIYAPAN" : "SEMALAIYAPAN"}
           </span>
         </h1>
 
